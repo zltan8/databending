@@ -8,8 +8,6 @@ from xlutils.copy import copy as xl_copy
 with open('alan0.json') as f:
     data = json.load(f)
 
-allpossible = []
-
 # finaldict structure: {tagname1 : { 3: num, 2: num, 1: num}, tagname2 : { 3: num, 2: num, 1: num}...}
 finaldict = {}
 
@@ -26,7 +24,6 @@ for line in data:
                 taglist.append(tag)
                 count -= 1
     tagcount = Counter(taglist)
-    print (tagcount)
     for tagname in tagcount:
         if tagcount[tagname] >= 3:
             if tagname in finaldict:
