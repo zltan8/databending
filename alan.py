@@ -109,7 +109,7 @@ wb = xl_copy(rb)
 # add sheet to workbook with existing sheets
 Sheet2 = wb.add_sheet('2')
 wb.save(fileName+".xls")
-Sheet3 = wb.add_sheet('3')
+Sheet3 = wb.add_sheet('1')
 wb.save(fileName+".xls")
 
 save_column_in_excel(fileName + ".xls", 0, 0, sheet1col1TagNames)
