@@ -54,6 +54,7 @@ for line in data:
                 while count > 0:
                     taglist.append(tag)
                     count -= 1
+        print (taglist)
         if numtagseachjob >= 3: # only want jobs with 3 or more tags
             processed += 1
             tagcount = Counter(taglist)
