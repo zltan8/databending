@@ -71,4 +71,5 @@ if __name__ == "__main__":
     with open('alanoutput.txt', 'w') as f:
         for item in resultdict:
             f.write("%s\t" % item)
-            f.write("%s\n" % resultdict[item])
+            f.write("%s\t" % resultdict[item]["count"])
+            f.write("%s\n" % resultdict[item]["jobs"])

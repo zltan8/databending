@@ -18,7 +18,7 @@ def splitnonalpha(s):
    pos = 1
    while pos < len(s) and s[pos].isalpha():
       pos+=1
-   return (s[:pos], s[pos:])
+      return (s[:pos], s[pos:])
 
 result = []
 count = 0
